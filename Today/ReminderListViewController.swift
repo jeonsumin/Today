@@ -8,6 +8,7 @@
 import UIKit
 
 typealias DataSource = UICollectionViewDiffableDataSource<Int,String>
+typealias Snapshot = NSDiffableDataSourceSnapshot<Int,String>
 
 class ReminderListViewController: UICollectionViewController {
     
@@ -29,6 +30,14 @@ class ReminderListViewController: UICollectionViewController {
         dataSource = DataSource(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, itemIdentifier: String) in
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
         }
+        
+        var snapshot = Snapshot()
+        snapshot.appendSections([0])
+        snapshot.appendItems(Reminder.sampleData.map { $0.title })
+        
+        dataSource.apply(snapshot)
+        
+        collectionView.dataSource = dataSource
     }
     
     
