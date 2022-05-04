@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0C104F2821FDF000268B88 /* Data+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C104E2821FDF000268B88 /* Data+Today.swift */; };
+		DE0C10522821FFE200268B88 /* ListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C10512821FFE200268B88 /* ListViewController+DataSource.swift */; };
 		DEFC2B68281AB7CF0004846C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC2B67281AB7CF0004846C /* AppDelegate.swift */; };
 		DEFC2B6A281AB7CF0004846C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC2B69281AB7CF0004846C /* SceneDelegate.swift */; };
 		DEFC2B6C281AB7CF0004846C /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC2B6B281AB7CF0004846C /* ReminderListViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE0C104E2821FDF000268B88 /* Data+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Today.swift"; sourceTree = "<group>"; };
+		DE0C10512821FFE200268B88 /* ListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController+DataSource.swift"; sourceTree = "<group>"; };
 		DEFC2B64281AB7CF0004846C /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEFC2B67281AB7CF0004846C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEFC2B69281AB7CF0004846C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE0C10502821FFB400268B88 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DEFC2B6B281AB7CF0004846C /* ReminderListViewController.swift */,
+				DE0C10512821FFE200268B88 /* ListViewController+DataSource.swift */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
 		DEFC2B5B281AB7CF0004846C = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +74,7 @@
 			children = (
 				DEFC2B67281AB7CF0004846C /* AppDelegate.swift */,
 				DEFC2B69281AB7CF0004846C /* SceneDelegate.swift */,
-				DEFC2B6B281AB7CF0004846C /* ReminderListViewController.swift */,
+				DE0C10502821FFB400268B88 /* ListViewController */,
 				DEFC2B6D281AB7CF0004846C /* Main.storyboard */,
 				DEFC2B70281AB7D00004846C /* Assets.xcassets */,
 				DEFC2B72281AB7D00004846C /* LaunchScreen.storyboard */,
@@ -74,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				DEFC2B7C281AB8750004846C /* Reminder.swift */,
+				DE0C104E2821FDF000268B88 /* Data+Today.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -149,6 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0C104F2821FDF000268B88 /* Data+Today.swift in Sources */,
+				DE0C10522821FFE200268B88 /* ListViewController+DataSource.swift in Sources */,
 				DEFC2B6C281AB7CF0004846C /* ReminderListViewController.swift in Sources */,
 				DEFC2B68281AB7CF0004846C /* AppDelegate.swift in Sources */,
 				DEFC2B6A281AB7CF0004846C /* SceneDelegate.swift in Sources */,
